@@ -1,0 +1,99 @@
+---
+title: "Vision-Screening-Analysis"
+author: "Daniel Brock"
+date: "1/15/2024"
+output: html_document
+---
+
+# Importing libraries and setting the working directory
+
+```{r}
+# Importing libraries 
+library(tidyverse)
+library(readxl)
+library(writexl)
+library(finalfit)
+library(ggpubr)
+
+# Setting the working directory
+cwd = getwd()
+#print(cwd)
+```
+
+# Importing and formatting the vision screening data
+
+```{r}
+# OpenGate
+opengate <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism.xlsx"), sheet = "OpenGate")
+opengate$site <- "OpenGate"
+
+# HOMES
+homes <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism.xlsx"), sheet = "HOMES")
+homes$site <- "HOMES"
+
+# Casa Maria
+casamaria <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism.xlsx"), sheet = "Casa-Maria")
+casamaria$site <- "Casa Maria"
+
+# Merging and formatting
+vision <- bind_rows(opengate, homes, casamaria)
+vision$site <- factor(x = vision$site, levels = c("HOMES", "OpenGate", "Casa Maria"))
+```
+
+
+
+# Analyzing data
+
+## Making a demographics table using finalfit
+
+```{r}
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

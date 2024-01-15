@@ -1,0 +1,11 @@
+# Files to ignore
+.RData
+.Rhistory
+Gold Humanism Glasses Grant.Rproj
+ghhs-service-project-grant-instructions.pdf
+supporting-files/H-Town CHAT Photo Release Form_IML.docx
+supporting-files/OpenGate Vision Screening Survey.docx
+
+# Folders to ignore
+pubs/
+.Rproj.user/
