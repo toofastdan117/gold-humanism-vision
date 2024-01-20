@@ -24,20 +24,63 @@ cwd = getwd()
 
 ```{r}
 # OpenGate
-opengate <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism.xlsx"), sheet = "OpenGate")
+opengate <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism_RAW.xlsx"), sheet = "OpenGate")
 opengate$site <- "OpenGate"
 
 # HOMES
-homes <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism.xlsx"), sheet = "HOMES")
+homes <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism_RAW.xlsx"), sheet = "HOMES")
 homes$site <- "HOMES"
 
 # Casa Maria
-casamaria <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism.xlsx"), sheet = "Casa-Maria")
+casamaria <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism_RAW.xlsx"), sheet = "Casa Maria")
 casamaria$site <- "Casa Maria"
 
+# Dia De La Mujer Latina (DML)
+dml <- read_xlsx(path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism_RAW.xlsx"), sheet = "Dia De La Mujer Latina")
+dml$site <- "Dia De La Mujer Latina"
+
 # Merging and formatting
-vision <- bind_rows(opengate, homes, casamaria)
-vision$site <- factor(x = vision$site, levels = c("HOMES", "OpenGate", "Casa Maria"))
+vision <- bind_rows(opengate, homes, casamaria, dml)
+vision$site <- factor(x = vision$site, levels = c("HOMES", "OpenGate", "Casa Maria", "Dia De La Mujer Latina"))
+colnames(vision) <- c("DOB", "age", "sex", "ethnicity", "glasses_type", "right_distance", "left_distance", "right_near", "left_near", "last_eye_exam", "insurance", "barriers", "referral", "screening_date", "site") #renaming columns
+vision$ID <- 1:nrow(vision)  #unique IDs for keeping track of individuals
+
+# Age groups
+vision <- vision %>% 
+  dplyr::mutate(age_groups =
+    dplyr::case_when(
+      age >= 18 & age < 30 ~ "18-29",
+      age >= 30 & age < 50 ~ "30-49",
+      age >= 50 & age < 65 ~ "50-64",
+      age >= 65 ~ "65+"
+    )
+  )
+
+# Sex groups
+vision$sex <- plyr::mapvalues(x = vision$sex, from = c("M", "F", "T"), to = c("Male", "Female", "Transgender"))
+
+# Mixed Ethnicity
+mixed_eth <- c()
+for (i in vision$ethnicity) {
+  if (grepl(pattern = ",", x = i)) {
+    i <- "Multiple"
+    mixed_eth <- c(mixed_eth, i)
+  } else {
+    mixed_eth <- c(mixed_eth, i)
+  }
+}
+vision$ethnicity <- mixed_eth
+
+# Factoring levels
+vision <- vision %>% 
+  dplyr::mutate(
+    age_groups = factor(x = age_groups, levels = c("18-29", "30-49", "50-64", "65+")) %>% ff_label("Age Groups"),
+    sex = factor(x = sex, levels = c("Male", "Female", "Transgender")) %>% ff_label("Sex"),
+    glasses_type = factor(x = glasses_type, levels = c("Distance", "Near", "Both")) %>% ff_label("Type of Glasses"),
+    ethnicity = factor(x = ethnicity, levels = c("Caucasian", "African American", "Hispanic/Latino", "Native American", "Multiple", "Other")) %>% ff_label("Ethnicity"),
+    last_eye_exam = factor(x = last_eye_exam, levels = c("Less than 1 year", "1-2 years", "3-5 years", "More than 5 years", "Never")) %>% ff_label("Last Eye Exam"),
+    insurance = factor(x = insurance, levels = c("Uninsured", "Private", "Medicare", "Medicaid", "Goldcard", "Affordable Care Act", "Molina")) %>% ff_label("Insurance")
+  )
 ```
 
 
@@ -47,8 +90,84 @@ vision$site <- factor(x = vision$site, levels = c("HOMES", "OpenGate", "Casa Mar
 ## Making a demographics table using finalfit
 
 ```{r}
+# Instructions from Finalfit: https://argoshare.is.ed.ac.uk/healthyr_book/finalfit-approach.html
+# Making a demographics table
+dependent <- "site"
+explanatory <- c("age_groups", "sex", "ethnicity", "insurance", "last_eye_exam")
+table1.1 <- vision %>% 
+  summary_factorlist(dependent, explanatory, p = FALSE, na_include = TRUE)
 
+# Exporting the data
+#write.csv(x = table1.1, file = paste0(cwd, "/data/demographics-table.csv"), row.names = FALSE)
 ```
+
+## Making a barriers to care table using finalfit
+
+```{r}
+# Cleaning the barriers data
+bar <- vision %>% dplyr::select(barriers, site, ID)
+bar <- bar %>% tidyr::separate_rows(barriers, sep = ", ")
+bar <- bar %>% dplyr::mutate(
+  barriers = factor(x = barriers, levels = c("Cost", "Lack of Transportation", "Lack of Knowledge", "Clinic Waiting Time", "Fear of Doctors", "Other", "None")) %>% ff_label("Barriers to Care")
+)
+
+# Making a barriers to care table
+dependent <- "site"
+explanatory <- c("barriers")
+table1.2 <- bar %>% 
+  summary_factorlist(dependent, explanatory, p = FALSE, na_include = TRUE)
+
+# Exporting the data
+#write.csv(x = table1.2, file = paste0(cwd, "/data/barriers-to-care-table.csv"), row.names = FALSE)
+```
+
+## Making a visual acuity table using finalfit
+
+```{r}
+# Cleaning the visual acuity DISTANCE data
+distance <- vision %>% dplyr::select(right_distance, left_distance, site, ID)
+colnames(distance) <- c("right", "left", "site", "ID")
+distance <- distance %>% tidyr::pivot_longer(cols = c("right", "left"), names_to = "eye", values_to = "distance")
+
+# Cleaning the visual acuity NEAR data
+near <- vision %>% dplyr::select(right_near, left_near, site, ID)
+colnames(near) <- c("right", "left", "site", "ID")
+near <- near %>% tidyr::pivot_longer(cols = c("right", "left"), names_to = "eye", values_to = "near")
+
+# Merging distance and near based on unique IDs
+acuity <- merge(distance, near, on = "ID")
+
+# Factoring
+acuity <- acuity %>% dplyr::mutate(
+  distance = factor(x = distance, levels = c("20/20", "20/30", "20/40", "20/50", "20/70", "20/100", "20/200", "unable to screen")) %>% ff_label("Distance Visual Acuity"),
+  near = factor(x = near, levels = c("20/20", "20/30", "20/40", "20/50", "20/70", "20/100", "20/200", "unable to screen")) %>% ff_label("Near Visual Acuity"),
+  eye = factor(x = eye, levels = c("right", "left")) %>% ff_label("Eye"),
+)
+
+# Making a visual acuity table
+dependent <- "site"
+explanatory <- c("distance", "near")
+table1.3 <- acuity %>% 
+  summary_factorlist(dependent, explanatory, p = FALSE, na_include = TRUE)
+
+# Exporting the data
+#write.csv(x = table1.3, file = paste0(cwd, "/data/visual-acuity-table.csv"), row.names = FALSE)
+```
+
+
+
+# Exporting a de-identified version of the data for safe public visibility
+
+```{r}
+# Selecting columns with no easily identify-able features (like DOB)
+deiden <- vision %>% dplyr::select(age, sex, ethnicity, glasses_type, right_distance, left_distance, right_near, left_near, last_eye_exam, insurance, barriers, referral, screening_date, site)
+
+# Exporting to excel
+#write_xlsx(x = deiden, path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism_DEIDENTIFIED.xlsx"))
+```
+
+
+
 
 
 

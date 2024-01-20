@@ -2,9 +2,12 @@
 .RData
 .Rhistory
 Gold Humanism Glasses Grant.Rproj
-ghhs-service-project-grant-instructions.pdf
+grant/ghhs-service-project-grant-instructions.pdf
 supporting-files/H-Town CHAT Photo Release Form_IML.docx
 supporting-files/OpenGate Vision Screening Survey.docx
+supporting-files/Am EYE Healthy Program Client Application Form-Adults-Spanish-9-8-21.docx
+supporting-files/Am EYE Healthy Program Client Application Form-Adults-English-9-8-21.docx
+data/Vision-Screening-Data_Gold-Humanism_RAW.xlsx
 
 # Folders to ignore
 pubs/
