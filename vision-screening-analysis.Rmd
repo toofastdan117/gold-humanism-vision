@@ -79,7 +79,7 @@ vision <- vision %>%
     glasses_type = factor(x = glasses_type, levels = c("Distance", "Near", "Both")) %>% ff_label("Type of Glasses"),
     ethnicity = factor(x = ethnicity, levels = c("Caucasian", "African American", "Hispanic/Latino", "Native American", "Multiple", "Other")) %>% ff_label("Ethnicity"),
     last_eye_exam = factor(x = last_eye_exam, levels = c("Less than 1 year", "1-2 years", "3-5 years", "More than 5 years", "Never")) %>% ff_label("Last Eye Exam"),
-    insurance = factor(x = insurance, levels = c("Uninsured", "Private", "Medicare", "Medicaid", "Goldcard", "Affordable Care Act", "Molina")) %>% ff_label("Insurance")
+    insurance = factor(x = insurance, levels = c("Uninsured", "Private", "Medicare", "Medicaid", "County/City Health", "Goldcard", "Affordable Care Act", "Molina")) %>% ff_label("Insurance")
   )
 ```
 
@@ -95,7 +95,7 @@ vision <- vision %>%
 dependent <- "site"
 explanatory <- c("age_groups", "sex", "ethnicity", "insurance", "last_eye_exam")
 table1.1 <- vision %>% 
-  summary_factorlist(dependent, explanatory, p = FALSE, na_include = TRUE)
+  summary_factorlist(dependent, explanatory, p = FALSE, na_include = TRUE, digits = c(1, 1, 3, 1, 0))
 
 # Exporting the data
 #write.csv(x = table1.1, file = paste0(cwd, "/data/demographics-table.csv"), row.names = FALSE)
@@ -108,7 +108,7 @@ table1.1 <- vision %>%
 bar <- vision %>% dplyr::select(barriers, site, ID)
 bar <- bar %>% tidyr::separate_rows(barriers, sep = ", ")
 bar <- bar %>% dplyr::mutate(
-  barriers = factor(x = barriers, levels = c("Cost", "Lack of Transportation", "Lack of Knowledge", "Clinic Waiting Time", "Fear of Doctors", "Other", "None")) %>% ff_label("Barriers to Care")
+  barriers = factor(x = barriers, levels = c("Cost", "Lack of Transportation", "Lack of Knowledge", "Clinic Waiting Time", "Fear of Doctors", "Fear of Treatment", "Other", "None")) %>% ff_label("Barriers to Care")
 )
 
 # Making a barriers to care table
