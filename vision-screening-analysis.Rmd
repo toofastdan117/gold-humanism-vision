@@ -101,6 +101,12 @@ table1.1 <- vision %>%
 #write.csv(x = table1.1, file = paste0(cwd, "/data/demographics-table.csv"), row.names = FALSE)
 ```
 
+```{r}
+# Getting the number of people screened per volunteer site
+print(table(vision$site))
+```
+
+
 ## Making a barriers to care table using finalfit
 
 ```{r}
@@ -120,6 +126,7 @@ table1.2 <- bar %>%
 # Exporting the data
 #write.csv(x = table1.2, file = paste0(cwd, "/data/barriers-to-care-table.csv"), row.names = FALSE)
 ```
+
 
 ## Making a visual acuity table using finalfit
 
@@ -156,6 +163,7 @@ table1.3 <- acuity %>%
 
 
 
+
 # Exporting a de-identified version of the data for safe public visibility
 
 ```{r}
@@ -165,6 +173,7 @@ deiden <- vision %>% dplyr::select(age, sex, ethnicity, glasses_type, right_dist
 # Exporting to excel
 #write_xlsx(x = deiden, path = paste0(cwd, "/data/Vision-Screening-Data_Gold-Humanism_DEIDENTIFIED.xlsx"))
 ```
+
 
 
 
