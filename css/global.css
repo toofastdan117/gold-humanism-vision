@@ -8,6 +8,12 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .website-section {
   display: flex;
   justify-content: center;
@@ -20,8 +26,5 @@
   background-color: aqua;
 }
 
-.web-body {
-  position: relative;
-  min-height: 100vh;
-}
+
 

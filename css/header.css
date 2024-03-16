@@ -26,6 +26,7 @@
 .nav-links {
   display: flex;
   flex-direction: row;
+  align-items: center;
   list-style: none;
 }
 
@@ -35,9 +36,9 @@
 
 .li-anchor {
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 8px;
   color: white;
-  padding: 7px 20px;
+  padding: 7px 16px;
   border-radius: 5px;
   font-size: 16px;
   position: relative;
@@ -65,5 +66,66 @@
 .nav-links a:is(:link, :active, :visited).active {
   color: black;
   background-color: white;
-  font-weight: bold;
+}
+
+
+
+/* Toggle English/Spanish Button */
+
+.toggle-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;  /* ??? */
+  margin-left: 25px;
+  padding: 10px 20px;
+  background-color: rgb(178, 132, 129);
+  border-radius: 10px;
+}
+
+.toggle-container .toggle {
+  position: relative;
+  width: 72px;
+  height: 36px;
+  background-color: rgb(28, 48, 121);
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.toggle-container .toggle .toggle-button {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.toggle-container .toggle-text {
+  color: white;
+  font-size: 16px;
+  padding: 2px 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.toggle-container .toggle.spanish {
+  background-color: rgb(206, 17, 38);
+}
+
+.toggle-container .toggle.spanish .toggle-button {
+  left: 38px;
+}
+
+.toggle-container .toggle-english.underline {
+  border-bottom: 1px solid white;
+}
+
+.toggle-container .toggle-spanish.underline {
+  border-bottom: 1px solid white;
 }

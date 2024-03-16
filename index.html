@@ -24,7 +24,7 @@
 </head>
 
 <!-- Page body -->
-<body class="web-body">
+<body>
 
   <!-- Header -->
   <header class="web-header">
@@ -38,74 +38,270 @@
     <!-- Navbar -->
     <nav>
       <ul class="nav-links">
+        <!-- Navigation Buttons -->
         <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/index.html">Clinics</a></li>
         <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/screening.html">Screening</a></li>
         <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/support.html">Support</a></li>
         <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/data.html">Data</a></li>
+
+        <!-- English/Spanish Toggle -->
+        <div class="toggle-container">
+          <div class="toggle-text toggle-english">English</div>
+          <div class="toggle">
+            <div class="toggle-button" onclick="animatedToggle();"></div>
+          </div>
+          <div class="toggle-text toggle-spanish">Español</div>
+        </div>
+
       </ul>
     </nav>
   </header>
 
-  <!-- Webpage content -->
-  <section class="clinics-section">
-    <h1 class="clinics-title">Purpose</h1>
-    <p class="clinics-text">
-      Baylor College of Medicine's Ophthalmology Interest Group has a eye care initiative that is funded by the The Arnold P. Gold Foundation.
-    </p>
-    <p class="clinics-text">
-      We perform vision screening and eye exams to underserved clients at community health fairs. If we determine that a client is in need of seeing a qualified ophthalmologist or optometrist, we recommend the following clinics. All of the following clinics accept patients without insurance.
-    </p>
-    <h1 class="clinics-title">Partnering Clinics</h1>
+  <!-- Webpage content English -->
+  <section class="clinics-section clinics-section-english">
+    
+    <div class="clinic-purpose-div">
+      <h1 class="clinics-title">Purpose</h1>
+      <p class="clinics-text">
+        Baylor College of Medicine's Ophthalmology Interest Group has an eye care initiative that is funded by the The Arnold P. Gold Foundation.
+      </p>
+      <p class="clinics-text">
+        We perform vision screening and eye exams to underserved clients at community health fairs. If we determine that a client is in need of seeing a qualified ophthalmologist or optometrist, we recommend the following clinics. All of the following clinics accept patients without insurance.
+      </p>
+    </div>
 
     <!-- List of Clinics -->
+    <h1 class="clinics-title">Partnering Clinics</h1>
     <div class="clinic-list">
+
       <!-- HHH -->
-      <div class="clinic-tab">
+      <div class="clinic-info">
+        <h3 class="clinic-names">Healthcare for the Homeless Houston</h3>
+        <ul class="info-list">
+          <li><a href="https://www.homeless-healthcare.org/" target="_blank">https://www.homeless-healthcare.org/</a></li>
+          <li>713-286-6000</li>
+          <li>1934 Caroline St, Houston, TX 77002</li>
+          <li>Weekly Ophthalmology Clinic led by Dr. Ravi Chundru</li>
+        </ul>
+      </div>
 
-        <div class="clinic-info">
-          <h3 class="clinic-names">Healthcare for the Homeless Houston</h3>
-          <ul class="info-list">
-            <li><a href="https://www.homeless-healthcare.org/" target="_blank">https://www.homeless-healthcare.org/</a></li>
-            <li>713-286-6000</li>
-            <li>1934 Caroline St, Houston, TX 77002</li>
-            <li>Weekly Ophthalmology Clinic led by Dr. Ravi Chundru</li>
-          </ul>
-        </div>
+      <div class="clinic-picture-div">
+        <img src="img/HHH logo.png" alt="HHH logo" class="clinic-picture">
+      </div>
 
-        <div class="clinic-picture-div">
-          <img src="img/HHH logo.png" alt="HHH logo" class="clinic-picture">
-        </div>
-
-        <div class="clinic-qr-code-div">
-          <img src="img/QR-code_HHH.png" alt="HHH QR code" class="clinic-qr-code">
-        </div>
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_HHH.png" alt="HHH QR code" class="clinic-qr-code">
       </div>
 
       <!-- UH College of Optometry -->
-      <div class="clinic-tab">
-
-        <div class="clinic-info">
-          <h3 class="clinic-names">University of Houston College of Optometry</h3>
-          <ul class="info-list">
-            <li><a href="https://eyecare.opt.uh.edu/" target="_blank">https://eyecare.opt.uh.edu/</a></li>
-            <li>713-743-2020</li>
-            <li>4401 Martin Luther King Boulevard Houston, TX 77204</li>
-          </ul>
-        </div>
-
-        <div class="clinic-picture-div">
-          <img src="img/UH College of Optometry.jpg" alt="UH logo" class="clinic-picture">
-        </div>
-
-        <div class="clinic-qr-code-div">
-          <img src="img/QR-code_UH-optometry.png" alt="UH QR code" class="clinic-qr-code">
-        </div>
-
+      <div class="clinic-info">
+        <h3 class="clinic-names">University of Houston College of Optometry</h3>
+        <ul class="info-list">
+          <li><a href="https://eyecare.opt.uh.edu/" target="_blank">https://eyecare.opt.uh.edu/</a></li>
+          <li>713-743-2020</li>
+          <li>4401 Martin Luther King Boulevard Houston, TX 77204</li>
+        </ul>
       </div>
 
+      <div class="clinic-picture-div">
+        <img src="img/UH College of Optometry.jpg" alt="UH logo" class="clinic-picture">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_UH-optometry.png" alt="UH QR code" class="clinic-qr-code">
+      </div>
+
+      <!-- Legacy Clinic -->
+      <div class="clinic-info">
+        <h3 class="clinic-names">Legacy Community Health</h3>
+        <ul class="info-list">
+          <li><a href="https://www.legacycommunityhealth.org/services/vision/" target="_blank">https://www.legacycommunityhealth.org/services/vision/</a></li>
+          <li>Montrose:</li>
+          <ul class="nested-info-list">
+            <li>832-548-5100</li>
+            <li>1415 California St. Houston, TX 77006</li>
+          </ul>
+          <li>Fifth Ward:</li>
+          <ul class="nested-info-list">
+            <li>832-548-5400</li>
+            <li>3811 Lyons Ave. Houston, TX 77020</li>
+          </ul>
+
+        </ul>
+      </div>
+
+      <div class="clinic-picture-div">
+        <img src="img/Legacy Community Health.jpeg" alt="Legacy logo" class="clinic-picture">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_Legacy.png" alt="Legacy QR code" class="clinic-qr-code">
+      </div>
+
+      <!-- San Jose Clinic -->
+      <div class="clinic-info">
+        <h3 class="clinic-names">San Jose Clinic</h3>
+        <ul class="info-list">
+          <li><a href="https://www.sanjoseclinic.org/" target="_blank">https://www.sanjoseclinic.org/</a></li>
+          <li>713-228-9411</li>
+          <li>2615 Fannin St, Houston, TX 77002</li>
+          <li>No insurance only</li>
+        </ul>
+      </div>
+
+      <div class="clinic-picture-div">
+        <img src="img/San Jose Clinic.jpeg" alt="San Jose logo" class="clinic-picture san-jose">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_San-Jose-Clinic.png" alt="San Jose QR code" class="clinic-qr-code">
+      </div>
+
+      <!-- Houston Eye Associates Foundation -->
+      <div class="clinic-info">
+        <h3 class="clinic-names">Houston Eye Associates Foundation</h3>
+        <ul class="info-list">
+          <li><a href="https://foundation.houstoneye.com/" target="_blank">https://foundation.houstoneye.com/</a></li>
+          <li>713-668-6828</li>
+          <li>7155 Old Katy Road, Suite S110 Houston, TX 77024</li>
+          <li>Uninsured or underinsured only</li>
+        </ul>
+      </div>
+
+      <div class="clinic-picture-div">
+        <img src="img/houston eye associates foundation-logo.jpg" alt="Houston Eye Associates logo" class="clinic-picture">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_Houston-eye-associates-foundation.png" alt="Houston Eye Associates QR code" class="clinic-qr-code">
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Webpage content Spanish -->
+  <section class="clinics-section clinics-section-spanish">
+    
+    <div class="clinic-purpose-div">
+      <h1 class="clinics-title">Objetivo</h1>
+      <p class="clinics-text">
+        El Grupo de Interés en Oftalmología del Baylor College of Medicine tiene una iniciativa de atención oftalmológica financiada por la Fundación Arnold P. Gold.
+      </p>
+      <p class="clinics-text">
+        Realizamos exámenes de la vista y exámenes de la vista a clientes desatendidos en ferias de salud comunitarias. Si determinamos que un cliente necesita ver a un oftalmólogo u optometrista calificado, recomendamos las siguientes clínicas. Todas las siguientes clínicas aceptan pacientes sin seguro.
+      </p>
     </div>
 
+    <!-- List of Clinics -->
+    <h1 class="clinics-title">Clínicas asociadas</h1>
+    <div class="clinic-list">
+
+      <!-- HHH -->
+      <div class="clinic-info">
+        <h3 class="clinic-names">Healthcare for the Homeless Houston</h3>
+        <ul class="info-list">
+          <li><a href="https://www.homeless-healthcare.org/" target="_blank">https://www.homeless-healthcare.org/</a></li>
+          <li>713-286-6000</li>
+          <li>1934 Caroline St, Houston, TX 77002</li>
+          <li>Clínica Semanal de Oftalmología Dirigida por el Dr. Ravi Chundru</li>
+        </ul>
+      </div>
+
+      <div class="clinic-picture-div">
+        <img src="img/HHH logo.png" alt="HHH logo" class="clinic-picture">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_HHH.png" alt="HHH QR code" class="clinic-qr-code">
+      </div>
+
+      <!-- UH College of Optometry -->
+      <div class="clinic-info">
+        <h3 class="clinic-names">University of Houston College of Optometry</h3>
+        <ul class="info-list">
+          <li><a href="https://eyecare.opt.uh.edu/" target="_blank">https://eyecare.opt.uh.edu/</a></li>
+          <li>713-743-2020</li>
+          <li>4401 Martin Luther King Boulevard Houston, TX 77204</li>
+        </ul>
+      </div>
+
+      <div class="clinic-picture-div">
+        <img src="img/UH College of Optometry.jpg" alt="UH logo" class="clinic-picture">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_UH-optometry.png" alt="UH QR code" class="clinic-qr-code">
+      </div>
+
+      <!-- Legacy Clinic -->
+      <div class="clinic-info">
+        <h3 class="clinic-names">Legacy Community Health</h3>
+        <ul class="info-list">
+          <li><a href="https://www.legacycommunityhealth.org/services/vision/" target="_blank">https://www.legacycommunityhealth.org/services/vision/</a></li>
+          <li>Montrose:</li>
+          <ul class="nested-info-list">
+            <li>832-548-5100</li>
+            <li>1415 California St. Houston, TX 77006</li>
+          </ul>
+          <li>Fifth Ward:</li>
+          <ul class="nested-info-list">
+            <li>832-548-5400</li>
+            <li>3811 Lyons Ave. Houston, TX 77020</li>
+          </ul>
+
+        </ul>
+      </div>
+
+      <div class="clinic-picture-div">
+        <img src="img/Legacy Community Health.jpeg" alt="Legacy logo" class="clinic-picture">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_Legacy.png" alt="Legacy QR code" class="clinic-qr-code">
+      </div>
+
+      <!-- San Jose Clinic -->
+      <div class="clinic-info">
+        <h3 class="clinic-names">San Jose Clinic</h3>
+        <ul class="info-list">
+          <li><a href="https://www.sanjoseclinic.org/" target="_blank">https://www.sanjoseclinic.org/</a></li>
+          <li>713-228-9411</li>
+          <li>2615 Fannin St, Houston, TX 77002</li>
+          <li>Solo sin seguro</li>
+        </ul>
+      </div>
+
+      <div class="clinic-picture-div">
+        <img src="img/San Jose Clinic.jpeg" alt="San Jose logo" class="clinic-picture san-jose">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_San-Jose-Clinic.png" alt="San Jose QR code" class="clinic-qr-code">
+      </div>
+
+      <!-- Houston Eye Associates Foundation -->
+      <div class="clinic-info">
+        <h3 class="clinic-names">Houston Eye Associates Foundation</h3>
+        <ul class="info-list">
+          <li><a href="https://foundation.houstoneye.com/" target="_blank">https://foundation.houstoneye.com/</a></li>
+          <li>713-668-6828</li>
+          <li>7155 Old Katy Road, Suite S110 Houston, TX 77024</li>
+          <li>Sólo sin seguro o con seguro insuficiente</li>
+        </ul>
+      </div>
+
+      <div class="clinic-picture-div">
+        <img src="img/houston eye associates foundation-logo.jpg" alt="Houston Eye Associates logo" class="clinic-picture">
+      </div>
+
+      <div class="clinic-qr-code-div">
+        <img src="img/QR-code_Houston-eye-associates-foundation.png" alt="Houston Eye Associates QR code" class="clinic-qr-code">
+      </div>
+    </div>
   </section>
+
+
 
   <!-- Footer -->
   <footer class="footer-object">
