@@ -1,0 +1,27 @@
+/* This is the stylesheet for global settings */
+
+* {
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.website-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.temp-text {
+  padding: 30px 50px;
+  background-color: aqua;
+}
+
+.web-body {
+  position: relative;
+  min-height: 100vh;
+}
+

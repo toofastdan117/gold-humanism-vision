@@ -127,6 +127,13 @@ table1.2 <- bar %>%
 #write.csv(x = table1.2, file = paste0(cwd, "/data/barriers-to-care-table.csv"), row.names = FALSE)
 ```
 
+```{r}
+# Counting the number of patients who said cost was a barrier
+cost <- nrow(dplyr::filter(vision, grepl("Cost", barriers)))
+cost_percent = cost / nrow(vision)
+```
+
+
 
 ## Making a visual acuity table using finalfit
 

@@ -1,0 +1,17 @@
+/* This is the footer stylesheet */
+
+.footer-object {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #1c3079;
+  margin-top: 50px;
+  padding: 20px 10% 20px 10%;
+}
+
+.copyright {
+  color: white;
+}

@@ -1,0 +1,69 @@
+/* This is the header stylesheet */
+
+.web-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c3079;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.title-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 28px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+
+
+/* Navigation Buttons and animations */
+
+.li-anchor {
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+  padding: 7px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+}
+
+.li-anchor::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0;
+  height: 1px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.li-anchor:hover::before {
+  width: 80%;
+}
+
+
+
+/* Active Class for page navigation buttons */
+
+.nav-links a:is(:link, :active, :visited).active {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,60 @@
+/* This is the clinics stylesheet */
+
+.clinics-section {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.clinics-title {
+  margin-bottom: 10px;
+}
+
+.clinics-text {
+  color: rgb(51, 51, 51);
+  text-align: justify;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.clinic-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.clinic-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+
+.clinic-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.clinic-names {
+  margin-bottom: 8px;
+}
+
+.info-list {
+  padding-left: 30px;
+}
+
+.info-list li {
+  color: rgb(51, 51, 51);
+}
+
+.clinic-picture {
+  width: 100%;
+  max-height: 30vh;
+}
+
+.clinic-qr-code {
+  width: 100%;
+  max-height: 30vh;
+}
