@@ -1,2 +1,109 @@
 /* This is the stylesheet for global settings */
 
+.screening-section {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.screening-purpose-div {
+  margin-bottom: 25px;
+}
+
+.screening-title {
+  margin-bottom: 10px;
+}
+
+.screening-text {
+  color: rgb(51, 51, 51);
+  text-align: justify;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+
+.screening-dates-div {
+  margin-bottom: 25px;
+}
+
+.screening-dates-list {
+  margin-left: 35px;
+}
+
+.screening-dates {
+  color: rgb(51, 51, 51);
+  text-align: justify;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.screening-map-container {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.screening-map-div {
+  display: flex;
+  width: 100%;
+}
+
+.screening-map {
+  width: 100%;
+  height: 450px;
+}
+
+.screening-steps-div {
+  margin-bottom: 30px;
+}
+
+.screening-ordered-list {
+  margin-left: 35px;
+}
+
+.screening-step {
+  color: rgb(51, 51, 51);
+  text-align: justify;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.inner-screening-list {
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+.flowchart-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.screening-flowchart {
+  width: 75%;
+}
+
+.screening-subtitle {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.screening-pdf-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.PBT-form {
+  width: 90%;
+  margin-bottom: 35px;
+}
+
+.perscription-form {
+  width: 90%;
+}
+
+
+
+

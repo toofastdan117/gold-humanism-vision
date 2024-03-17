@@ -17,7 +17,7 @@
   flex-direction: column;
 }
 
-.title {
+.title, .title-oig {
   font-weight: 800;
   font-size: 28px;
   color: white;
@@ -114,11 +114,11 @@
   transition: 0.3s ease-in-out;
 }
 
-.toggle-container .toggle.spanish {
+.toggle-container .toggle.switch {
   background-color: rgb(206, 17, 38);
 }
 
-.toggle-container .toggle.spanish .toggle-button {
+.toggle-container .toggle.switch .toggle-button {
   left: 38px;
 }
 

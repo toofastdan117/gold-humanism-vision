@@ -20,6 +20,21 @@
   margin-bottom: 8px;
 }
 
+.maps-container {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.map-div {
+  display: flex;
+  width: 100%;
+}
+
+.partnering-clinics-maps {
+  width: 100%;
+  height: 450px;
+}
+
 .clinic-list {
   display: grid;
   grid-template-columns: 1fr 1fr 0.7fr;
@@ -75,17 +90,3 @@
   width: 50%
 }
 
-
-/* English/Spanish Conversion */
-
-.clinics-section {
-  display: none;
-}
-
-.clinics-section-english.show {
-  display: block;
-}
-
-.clinics-section-spanish.show {
-  display: block;
-}

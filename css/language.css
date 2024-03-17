@@ -1,0 +1,22 @@
+/* English/Spanish Conversion */
+
+.title {
+  display: none;
+}
+
+.li-anchor {
+  display: none;
+}
+
+.clinics-section {
+  display: none;
+}
+
+.screening-section {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+

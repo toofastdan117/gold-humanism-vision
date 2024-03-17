@@ -10,6 +10,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/language.css">
   <link rel="stylesheet" href="css/clinics.css">
   <link rel="stylesheet" href="css/screening.css">
   <link rel="stylesheet" href="css/support.css">
@@ -31,18 +32,25 @@
 
     <!-- Page title -->
     <div class="title-div">
-      <h1 class="title">Vision Screening</h1>
-      <h1 class="title">BCM OIG</h1>
+      <h1 class="title english">Vision Screening</h1>
+      <h1 class="title spanish">Examen de la vista</h1>
+      <h1 class="title-oig">BCM OIG</h1>
     </div>
 
     <!-- Navbar -->
     <nav>
       <ul class="nav-links">
-        <!-- Navigation Buttons -->
-        <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/index.html">Clinics</a></li>
-        <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/screening.html">Screening</a></li>
-        <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/support.html">Support</a></li>
-        <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/data.html">Data</a></li>
+        <!-- Navigation Buttons English -->
+        <li class="li-nav"><a class="li-anchor english" href="/gold-humanism-vision/index.html">Clinics</a></li>
+        <li class="li-nav"><a class="li-anchor english" href="/gold-humanism-vision/screening.html">Screening</a></li>
+        <li class="li-nav"><a class="li-anchor english" href="/gold-humanism-vision/support.html">Support</a></li>
+        <li class="li-nav"><a class="li-anchor english" href="/gold-humanism-vision/data.html">Data</a></li>
+
+        <!-- Navigation Buttons Spanish -->
+        <li class="li-nav"><a class="li-anchor spanish" href="/gold-humanism-vision/index.html">Clínicas</a></li>
+        <li class="li-nav"><a class="li-anchor spanish" href="/gold-humanism-vision/screening.html">Poner en pantalla</a></li>
+        <li class="li-nav"><a class="li-anchor spanish" href="/gold-humanism-vision/support.html">Apoyo</a></li>
+        <li class="li-nav"><a class="li-anchor spanish" href="/gold-humanism-vision/data.html">Datos</a></li>
 
         <!-- English/Spanish Toggle -->
         <div class="toggle-container">
@@ -57,9 +65,94 @@
     </nav>
   </header>
 
-  <!-- Webpage content -->
-  <section class="website-section">
-    <h1 class="temp-text">Screening</h1>
+
+  <!-- Webpage content English -->
+  <section class="screening-section english">
+
+    <!-- Purpose of vision screening -->
+    <div class="screening-purpose-div">
+      <h1 class="screening-title">Screening</h1>
+      <p class="screening-text">
+        We conduct vision screening and eye exams in partnership with <a href="https://texas.preventblindness.org/" target="_blank">Prevent Blindness Texas</a>, who lend us vision screening machines and surveys that allow us to assess eye health and risk factors.
+      </p>
+      <p class="screening-text">
+        Clients with poor visual acuity are given a comprehensive eye exam conducted by medical students from Baylor College of Medicine and McGovern Medical School. The screening steps, screening forms used during the exam, and outcomes that we report are further described below.
+      </p>
+    </div>
+
+    <!-- Screening Dates -->
+    <div class="screening-dates-div">
+      <h1 class="screening-title">Screening Dates</h1>
+      <ul class="screening-dates-list">
+        <li class="screening-dates">Día De La Mujer Latina: May 4, 8am-2pm</li>
+        <li class="screening-dates">HOMES Clinic: May 19: 8am-2pm</li>
+      </ul>
+    </div>
+
+    <!-- Screening Sites Map -->
+    <div class="screening-map-container">
+      <h1 class="screening-title">Screening Locations</h1>
+      <div class="screening-map-div">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1i-omuZVKMZFFn_IkARtB5adXIULtqHw&ehbc=2E312F&noprof=1" class="screening-map"></iframe>
+      </div>
+    </div>
+
+    <!-- Screening steps -->
+    <div class="screening-steps-div">
+      <h1 class="screening-title">Screening Steps</h1>
+      <ol class="screening-ordered-list">
+        <li class="screening-step">
+          Client completes the Prevent Blindness Texas vision screening form, available in Spanish and English (available below). Visually impaired clients will have a volunteer read the form aloud.
+        </li>
+        <li class="screening-step">
+          Visual acuity is evaluated using a vision screening machine from Prevent Blindness Texas. If a client has normal vision and minimal risk factors for eye disease, they are reassured.
+        </li>
+        <li class="screening-step">
+          Clients with poor near or distance vision (>20/40) are given a comprehensive eye exam by a medical student. 
+        </li>
+        <li class="screening-step">
+          If the client has poor near-vision and symptoms of hyperopia or presbyopia:
+        </li>
+        <ul class="inner-screening-list">
+          <li class="screening-step">
+            Their perscription is guided by a vision test chart held 12-14 inches away from the client's eyes (available below).
+          </li>
+          <li class="screening-step">
+            Clients are fitted with reading glasses. The client determines which pair of glasses improves their near vision the most.
+          </li>
+          <li class="screening-step">
+            If the client expresses improvement in near vision, we will remeasure their visual acuity with correction and <span style="font-weight: bold;">donate them a pair of glasses</span>!
+          </li>
+          <li class="screenin-step">
+            For both clients with an improvement in near vision and those who do not report an improvement, we will facilitate a referral to an opthalmologist or optometrist for follow up.
+          </li>
+        </ul>
+        <li class="screening-step">
+          For clients with poor distance vision and symptoms or myopia or risk factors for eye developing eye disease in the future, we will refer them to an opthalmologist or optometrist.
+        </li>
+        <li class="screening-step">
+          For clients with <span style="font-weight: bold;">ALARM FEATURES</span>, such as severe eye pain, nausea or vomiting, stroke symptoms, signs of infection, light sensitivity, or sudden loss of vision, we will give them directions to go to a local urgent care or hospital ASAP. Examples include Ben Taub hospital or LBJ hospital.
+        </li>
+      </ol>
+    </div>
+
+    <!-- Flowchart for vision screening encounter -->
+    <h1 class="flowchart-title">Flowchart for Vision Screening Encounter</h1>
+    <div class="flowchart-div">
+      <img src="img/vision-screening-flowchart-english.svg" alt="vision screening flowchart" class="screening-flowchart">
+    </div>
+
+    <!-- Screening Forms -->
+    <h1 class="screening-title">Screening Forms</h1>
+    <h3 class="screening-subtitle">Prevent Blindness Texas Vision Screening Form</h3>
+    <div class="screening-pdf-div">
+      <embed src="supporting-files/PBT-AVS Eye Health Registration Form-English-Revised-2-24-20.pdf" class="PBT-form" width="100%" height="1000px">
+    </div>
+    <h3 class="screening-subtitle">Perscription Test Chart</h3>
+    <div class="screening-pdf-div">
+      <embed src="supporting-files/Eye_Chart_One_Sheet_Update-A-English.pdf" class="perscription-form" width="100%" height="1000px">
+    </div>
+
   </section>
 
   <!-- Footer -->

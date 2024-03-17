@@ -5,7 +5,7 @@
 const toggle = document.querySelector(".toggle");
 
 function animatedToggle() {
-  toggle.classList.toggle("spanish");
+  toggle.classList.toggle("switch");
   toggleText();
   interpreter();
   console.log("button pressed");
@@ -18,7 +18,7 @@ const toggleSpanish = document.querySelector(".toggle-spanish");
 toggleEnglish.classList.add("underline");
 
 function toggleText() {
-  if(toggle.classList.contains("spanish")) {
+  if(toggle.classList.contains("switch")) {
     toggleEnglish.classList.remove("underline");
     toggleSpanish.classList.add("underline");
   } else {
@@ -29,16 +29,27 @@ function toggleText() {
 
 
 // Interpret website content in english or spanish
-const contentEnglish = document.querySelector(".clinics-section-english");
-const contentSpanish = document.querySelector(".clinics-section-spanish");
-contentEnglish.classList.add("show");
+const contentEnglish = document.querySelectorAll(".english");
+const contentSpanish = document.querySelectorAll(".spanish");
+contentEnglish.forEach(element => {
+  element.classList.add("show");
+})
 
 function interpreter() {
-  if(toggle.classList.contains("spanish")) {
-    contentEnglish.classList.remove("show");
-    contentSpanish.classList.add("show");
+  if(toggle.classList.contains("switch")) {
+    contentEnglish.forEach(element => {
+      element.classList.remove("show");
+    })
+    contentSpanish.forEach(element => {
+      element.classList.add("show");
+    })
   } else {
-    contentEnglish.classList.add("show");
-    contentSpanish.classList.remove("show");
+    contentEnglish.forEach(element => {
+      element.classList.add("show");
+    })
+    contentSpanish.forEach(element => {
+      element.classList.remove("show");
+    })
   }
 }
+

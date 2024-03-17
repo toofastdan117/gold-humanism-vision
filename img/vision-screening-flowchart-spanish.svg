@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 1150">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #000;
+        font-family: ArialMT, Arial;
+        font-size: 20px;
+      }
+
+      .cls-3 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-4 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="Spanish_Arrows" data-name="Spanish Arrows">
+    <g>
+      <line class="cls-1" x1="844.52" y1="220.57" x2="896.56" y2="220.57"/>
+      <polygon class="cls-4" points="894.22 228.54 908.04 220.57 894.22 212.59 894.22 228.54"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="665.04" y1="388.61" x2="665.04" y2="446.7"/>
+      <polygon class="cls-4" points="657.06 444.36 665.04 458.18 673.02 444.36 657.06 444.36"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="665.04" y1="116.5" x2="665.04" y2="169.93"/>
+      <polygon class="cls-4" points="657.06 167.59 665.04 181.41 673.02 167.59 657.06 167.59"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="665.04" y1="259.72" x2="665.04" y2="317.78"/>
+      <polygon class="cls-4" points="657.06 315.44 665.04 329.26 673.02 315.44 657.06 315.44"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="986.83" y1="586.13" x2="986.83" y2="612.7"/>
+      <polygon class="cls-4" points="978.85 610.36 986.83 624.18 994.8 610.36 978.85 610.36"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="343.84" y1="752.13" x2="343.84" y2="805.55"/>
+      <polygon class="cls-4" points="335.86 803.22 343.84 817.03 351.82 803.22 335.86 803.22"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="665.04" y1="539.27" x2="665.04" y2="612.7"/>
+      <polygon class="cls-4" points="657.06 610.36 665.04 624.18 673.02 610.36 657.06 610.36"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="343.25" y1="539.27" x2="343.25" y2="612.7"/>
+      <polygon class="cls-4" points="335.27 610.36 343.25 624.18 351.23 610.36 335.27 610.36"/>
+    </g>
+    <g>
+      <polyline class="cls-1" points="343.25 446.7 343.25 425.61 665.04 425.61 986.83 425.61 986.83 446.7"/>
+      <polygon class="cls-4" points="351.23 444.36 343.25 458.18 335.27 444.36 351.23 444.36"/>
+      <polygon class="cls-4" points="978.85 444.36 986.83 458.18 994.8 444.36 978.85 444.36"/>
+    </g>
+    <g>
+      <polyline class="cls-1" points="523.32 995.93 523.32 1044.13 344.23 1044.13 344.23 1061.31"/>
+      <polygon class="cls-4" points="336.25 1058.97 344.23 1072.79 352.21 1058.97 336.25 1058.97"/>
+    </g>
+    <polyline class="cls-1" points="163.17 1017.15 163.17 1044.13 344.23 1044.13"/>
+    <g>
+      <polyline class="cls-1" points="343.84 858.18 343.84 886.79 163.17 886.79 163.17 902.34"/>
+      <polygon class="cls-4" points="155.2 900 163.17 913.82 171.15 900 155.2 900"/>
+    </g>
+    <g>
+      <polyline class="cls-1" points="523.32 925.92 523.32 886.79 344.23 886.79"/>
+      <polygon class="cls-4" points="531.3 923.59 523.32 937.4 515.34 923.59 531.3 923.59"/>
+    </g>
+  </g>
+  <g id="Spanish_Instructions" data-name="Spanish Instructions">
+    <text class="cls-2" transform="translate(509.41 37.53)"><tspan x="0" y="0">El cliente completa el formulario de </tspan><tspan x="8.87" y="24">evaluación de la vista de Prevent </tspan><tspan x="80.77" y="48">Blindness</tspan><tspan class="cls-5" x="167.49" y="48"> </tspan><tspan class="cls-3" x="172.69" y="48">T</tspan><tspan x="182.69" y="48">exas. </tspan><tspan x="15.54" y="72">(disponible en inglés y español)</tspan></text>
+    <text class="cls-2" transform="translate(522.16 203.72)"><tspan x="0" y="0">Evaluación de la agudeza visual </tspan><tspan x="-32.25" y="24">mediante una máquina de detección de </tspan><tspan x="103.97" y="48">la visión.</tspan></text>
+    <text class="cls-2" transform="translate(504.4 354.09)"><tspan x="0" y="0">Examen ocular completo en clientes </tspan><tspan x="51.42" y="24">con mala visión (&gt;20/40)</tspan></text>
+    <text class="cls-2" transform="translate(200.97 481.89)"><tspan x="0" y="0">Mala visión de cerca y síntomas </tspan><tspan x="5.54" y="24">compatibles con hipermetropía </tspan><tspan x="93.92" y="48">o presbicia</tspan></text>
+    <text class="cls-2" transform="translate(526.64 481.89)"><tspan x="0" y="0">Mala visión de lejos y síntomas </tspan><tspan x="6.1" y="24">de miopía. Factores de riesgo </tspan><tspan x="19.99" y="48">de enfermedades oculares</tspan></text>
+    <text class="cls-2" transform="translate(546.64 648.55)"><tspan x="0" y="0">Derivación a oftalmólogo u </tspan><tspan x="63.37" y="24">optometrista</tspan></text>
+    <text class="cls-2" transform="translate(211.5 647.31)"><tspan x="0" y="0">Prescripción guiada mediante </tspan><tspan x=".53" y="24">una tabla de prueba de visión </tspan><tspan x="-8.92" y="48">sostenida a una distancia de 12 </tspan><tspan x="2.2" y="72">a 14 pulgadas de los ojos del </tspan><tspan x="102.84" y="96">cliente </tspan></text>
+    <text class="cls-2" transform="translate(228.21 844.8)"><tspan x="0" y="0">Ajuste de gafas de lectura </tspan></text>
+    <text class="cls-2" transform="translate(46.44 936.64)"><tspan x="0" y="0">Cliente expresa mejora en </tspan><tspan x="-20.56" y="24">visión de cerca: vuelve a medir </tspan><tspan x="-25.57" y="48">agudeza visual con corrección y </tspan><tspan x="20.55" y="72">dona gafas de lectura </tspan></text>
+    <text class="cls-2" transform="translate(391.57 961.61)"><tspan x="0" y="0">El cliente no experimenta una </tspan><tspan x="7.24" y="24">mejora en la visión de cerca </tspan></text>
+    <text class="cls-2" transform="translate(228.78 1097.44)"><tspan x="0" y="0">Remisión al oftalmólogo u </tspan><tspan x="-19.46" y="24">optometrista para seguimiento</tspan></text>
+    <text class="cls-2" transform="translate(858.97 646.81)"><tspan x="0" y="0">Indicaciones para llegar a un </tspan><tspan x="-10.57" y="24">hospital o atención de urgencia </tspan><tspan x="32.99" y="48">local (Ben</tspan><tspan class="cls-5" x="121.93" y="48"> </tspan><tspan class="cls-3" x="127.12" y="48">T</tspan><tspan x="137.12" y="48">aub, LBJ)</tspan></text>
+    <text class="cls-2" transform="translate(845.1 481.31)"><tspan x="0" y="0">Características de alarma: dolor </tspan><tspan x="27.76" y="24">ocular intenso, náuseas o </tspan><tspan x="4.43" y="48">vómitos, infección, sensibilidad </tspan><tspan x="2.18" y="72">a la luz, pérdida repentina de la </tspan><tspan x="18.87" y="96">visión.repentina de la visión</tspan></text>
+    <text class="cls-2" transform="translate(919.85 203.72)"><tspan class="cls-5" x="0" y="0">V</tspan><tspan x="12.98" y="0">isión normal, mínimo </tspan><tspan x="-1.32" y="24">riesgo de enfermedad:</tspan><tspan x="42.59" y="48">Seguridades</tspan></text>
+  </g>
+</svg>

@@ -10,6 +10,7 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/language.css">
   <link rel="stylesheet" href="css/clinics.css">
   <link rel="stylesheet" href="css/screening.css">
   <link rel="stylesheet" href="css/support.css">
@@ -31,18 +32,25 @@
 
     <!-- Page title -->
     <div class="title-div">
-      <h1 class="title">Vision Screening</h1>
-      <h1 class="title">BCM OIG</h1>
+      <h1 class="title english">Vision Screening</h1>
+      <h1 class="title spanish">Examen de la vista</h1>
+      <h1 class="title-oig">BCM OIG</h1>
     </div>
 
     <!-- Navbar -->
     <nav>
       <ul class="nav-links">
-        <!-- Navigation Buttons -->
-        <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/index.html">Clinics</a></li>
-        <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/screening.html">Screening</a></li>
-        <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/support.html">Support</a></li>
-        <li class="li-nav"><a class="li-anchor" href="/gold-humanism-vision/data.html">Data</a></li>
+        <!-- Navigation Buttons English -->
+        <li class="li-nav"><a class="li-anchor english" href="/gold-humanism-vision/index.html">Clinics</a></li>
+        <li class="li-nav"><a class="li-anchor english" href="/gold-humanism-vision/screening.html">Screening</a></li>
+        <li class="li-nav"><a class="li-anchor english" href="/gold-humanism-vision/support.html">Support</a></li>
+        <li class="li-nav"><a class="li-anchor english" href="/gold-humanism-vision/data.html">Data</a></li>
+
+        <!-- Navigation Buttons Spanish -->
+        <li class="li-nav"><a class="li-anchor spanish" href="/gold-humanism-vision/index.html">Clínicas</a></li>
+        <li class="li-nav"><a class="li-anchor spanish" href="/gold-humanism-vision/screening.html">Poner en pantalla</a></li>
+        <li class="li-nav"><a class="li-anchor spanish" href="/gold-humanism-vision/support.html">Apoyo</a></li>
+        <li class="li-nav"><a class="li-anchor spanish" href="/gold-humanism-vision/data.html">Datos</a></li>
 
         <!-- English/Spanish Toggle -->
         <div class="toggle-container">
@@ -58,22 +66,34 @@
   </header>
 
   <!-- Webpage content English -->
-  <section class="clinics-section clinics-section-english">
+  <section class="clinics-section english">
     
     <div class="clinic-purpose-div">
       <h1 class="clinics-title">Purpose</h1>
       <p class="clinics-text">
-        Baylor College of Medicine's Ophthalmology Interest Group has an eye care initiative that is funded by the The Arnold P. Gold Foundation.
+        Baylor College of Medicine's Ophthalmology Interest Group has an eye care initiative that performs vision screening and eye exams to underserved clients at community health fairs. Our mission is to promote equitable access to comprehensive vision care and empower underserved communities in Houston by providing on-site vision screenings, corrective eyeglasses, preventive solutions, and referrals to affordable eye care providers.
       </p>
       <p class="clinics-text">
-        We perform vision screening and eye exams to underserved clients at community health fairs. If we determine that a client is in need of seeing a qualified ophthalmologist or optometrist, we recommend the following clinics. All of the following clinics accept patients without insurance.
+
       </p>
     </div>
 
     <!-- List of Clinics -->
     <h1 class="clinics-title">Partnering Clinics</h1>
-    <div class="clinic-list">
+    <p class="clinics-text">
+      When we perform eye exams, we look for risk factors for eye disease or conditions that we cannot assist with on-site. If we determine that a client is in need of seeing a certified ophthalmologist or optometrist, we recommend the following clinics. All of the following clinics accept patients without insurance.
+    </p>
 
+    <!-- Clinic Maps -->
+    <div class="maps-container">
+      <h1 class="clinics-title">Map of Partnering Clinics</h1>
+      <div class="map-div">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZGG50Jn5rGsSlwXGACbF10kLYSoHbBE&ehbc=2E312F&noprof=1" class="partnering-clinics-maps"></iframe>
+      </div>
+    </div>
+
+    <h1 class="clinics-title">Clinic Contact Information</h1>
+    <div class="clinic-list">
       <!-- HHH -->
       <div class="clinic-info">
         <h3 class="clinic-names">Healthcare for the Homeless Houston</h3>
@@ -181,22 +201,34 @@
 
 
   <!-- Webpage content Spanish -->
-  <section class="clinics-section clinics-section-spanish">
+  <section class="clinics-section spanish">
     
     <div class="clinic-purpose-div">
       <h1 class="clinics-title">Objetivo</h1>
       <p class="clinics-text">
-        El Grupo de Interés en Oftalmología del Baylor College of Medicine tiene una iniciativa de atención oftalmológica financiada por la Fundación Arnold P. Gold.
+        El Grupo de Interés en Oftalmología de Baylor College of Medicine tiene una iniciativa de atención oftalmológica que realiza exámenes de la vista y exámenes oculares a clientes desatendidos en ferias de salud comunitarias. Nuestra misión es promover el acceso equitativo a la atención integral de la vista y empoderar a las comunidades desatendidas en Houston brindando exámenes de la vista en el lugar, anteojos correctivos, soluciones preventivas y referencias a proveedores de atención oftalmológica asequibles.
       </p>
       <p class="clinics-text">
-        Realizamos exámenes de la vista y exámenes de la vista a clientes desatendidos en ferias de salud comunitarias. Si determinamos que un cliente necesita ver a un oftalmólogo u optometrista calificado, recomendamos las siguientes clínicas. Todas las siguientes clínicas aceptan pacientes sin seguro.
+
       </p>
     </div>
 
     <!-- List of Clinics -->
     <h1 class="clinics-title">Clínicas asociadas</h1>
-    <div class="clinic-list">
+    <p class="clinics-text">
+      Cuando realizamos exámenes de la vista, buscamos factores de riesgo de enfermedades o afecciones oculares con las que no podemos ayudar en el sitio. Si determinamos que un cliente necesita ver a un oftalmólogo u optometrista certificado, recomendamos las siguientes clínicas. Todas las siguientes clínicas aceptan pacientes sin seguro.
+    </p>
 
+    <!-- Clinic Maps -->
+    <div class="maps-container">
+      <h1 class="clinics-title">Mapa de clínicas asociadas</h1>
+      <div class="map-div">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1ZGG50Jn5rGsSlwXGACbF10kLYSoHbBE&ehbc=2E312F&noprof=1" class="partnering-clinics-maps"></iframe>
+      </div>
+    </div>
+
+    <h1 class="clinics-title">Información de contacto de la clínica</h1>
+    <div class="clinic-list">
       <!-- HHH -->
       <div class="clinic-info">
         <h3 class="clinic-names">Healthcare for the Homeless Houston</h3>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 1070">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.07em;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #000;
+        font-family: ArialMT, Arial;
+        font-size: 20px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.11em;
+      }
+
+      .cls-5 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+    </style>
+  </defs>
+  <g id="English_Arrows" data-name="English Arrows">
+    <g>
+      <line class="cls-2" x1="844.82" y1="197.38" x2="896.86" y2="197.38"/>
+      <polygon class="cls-5" points="894.52 205.36 908.34 197.38 894.52 189.4 894.52 205.36"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="665.34" y1="351.89" x2="665.34" y2="409.98"/>
+      <polygon class="cls-5" points="657.36 407.64 665.34 421.46 673.32 407.64 657.36 407.64"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="665.34" y1="103.38" x2="665.34" y2="156.8"/>
+      <polygon class="cls-5" points="657.36 154.47 665.34 168.28 673.32 154.47 657.36 154.47"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="665.34" y1="227.63" x2="665.34" y2="281.05"/>
+      <polygon class="cls-5" points="657.36 278.72 665.34 292.54 673.32 278.72 657.36 278.72"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="987.13" y1="522.55" x2="987.13" y2="575.98"/>
+      <polygon class="cls-5" points="979.15 573.64 987.13 587.46 995.11 573.64 979.15 573.64"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="343.55" y1="669.63" x2="343.55" y2="723.05"/>
+      <polygon class="cls-5" points="335.57 720.72 343.55 734.54 351.53 720.72 335.57 720.72"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="665.34" y1="502.55" x2="665.34" y2="575.98"/>
+      <polygon class="cls-5" points="657.36 573.64 665.34 587.46 673.32 573.64 657.36 573.64"/>
+    </g>
+    <g>
+      <line class="cls-2" x1="343.55" y1="502.55" x2="343.55" y2="575.98"/>
+      <polygon class="cls-5" points="335.57 573.64 343.55 587.46 351.53 573.64 335.57 573.64"/>
+    </g>
+    <g>
+      <polyline class="cls-2" points="343.55 409.98 343.55 388.89 665.34 388.89 987.13 388.89 987.13 409.98"/>
+      <polygon class="cls-5" points="351.53 407.64 343.55 421.46 335.57 407.64 351.53 407.64"/>
+      <polygon class="cls-5" points="979.15 407.64 987.13 421.46 995.11 407.64 979.15 407.64"/>
+    </g>
+    <g>
+      <polyline class="cls-2" points="523.03 913.44 523.03 961.63 343.94 961.63 343.94 978.81"/>
+      <polygon class="cls-5" points="335.97 976.48 343.94 990.29 351.92 976.48 335.97 976.48"/>
+    </g>
+    <polyline class="cls-2" points="162.88 934.66 162.88 961.63 343.94 961.63"/>
+    <g>
+      <polyline class="cls-2" points="343.55 775.69 343.55 804.3 162.88 804.3 162.88 819.84"/>
+      <polygon class="cls-5" points="154.91 817.51 162.88 831.32 170.86 817.51 154.91 817.51"/>
+    </g>
+    <g>
+      <polyline class="cls-2" points="523.03 843.43 523.03 804.3 343.94 804.3"/>
+      <polygon class="cls-5" points="531.01 841.09 523.03 854.91 515.05 841.09 531.01 841.09"/>
+    </g>
+  </g>
+  <g id="English_Instructions" data-name="English Instructions">
+    <text class="cls-3" transform="translate(491.36 45.21)"><tspan x="0" y="0">Client completes the Prevent Blindness </tspan><tspan class="cls-4" x="47.82" y="24">T</tspan><tspan x="57.82" y="24">exas vision screening form.</tspan><tspan x="23.33" y="48">(available in English and Spanish)</tspan></text>
+    <text class="cls-3" transform="translate(497.65 193.12)"><tspan class="cls-6" x="0" y="0">V</tspan><tspan x="12.98" y="0">isual acuity evaluation using a vision </tspan><tspan x="83.76" y="24">screening machine</tspan></text>
+    <text class="cls-3" transform="translate(504.15 317.37)"><tspan x="0" y="0">Comprehensive eye exam on clients </tspan><tspan x="51.97" y="24">with poor vision (&gt;20/40)</tspan></text>
+    <text class="cls-3" transform="translate(202.94 445.16)"><tspan x="0" y="0">Poor near-vision and symptoms </tspan><tspan x="16.66" y="24">consistent with hyperopia or </tspan><tspan x="91.69" y="48">presbyopia</tspan></text>
+    <text class="cls-3" transform="translate(556.38 445.16)"><tspan x="0" y="0">Poor distance vision and </tspan><tspan x="14.48" y="24">symptoms of myopia. </tspan><tspan x="-16.65" y="48">Risk factors for eye disease.</tspan></text>
+    <text class="cls-3" transform="translate(534.16 611.83)"><tspan x="0" y="0">Referral to ophthalmologist or </tspan><tspan x="81.71" y="24">optometrist</tspan></text>
+    <text class="cls-3" transform="translate(222.92 611.7)"><tspan x="0" y="0">Prescription guided using a </tspan><tspan x="1.12" y="24">vision test chart held 12-14 </tspan><tspan x="-14.24" y="48">inches away from client</tspan><tspan class="cls-6" x="193.62" y="48">’</tspan><tspan x="197.7" y="48">s eyes </tspan></text>
+    <text class="cls-3" transform="translate(232.38 762.3)"><tspan x="0" y="0">Fitting of reading glasses </tspan></text>
+    <text class="cls-3" transform="translate(28.39 854.15)"><tspan x="0" y="0">Client expresses improvement </tspan><tspan x="-6.12" y="24">in near vision: remeasure visual </tspan><tspan x="21.67" y="48">acuity with correction and </tspan><tspan x="31.09" y="72">donate reading glasses </tspan></text>
+    <text class="cls-3" transform="translate(390.72 879.11)"><tspan x="0" y="0">Client does not experience an </tspan><tspan x="12.81" y="24">improvement in near vision </tspan></text>
+    <text class="cls-3" transform="translate(212.37 1014.94)"><tspan x="0" y="0">Referral to ophthalmologist or </tspan><tspan x="25.02" y="24">optometrist for follow up</tspan></text>
+    <text class="cls-3" transform="translate(854.84 611.83)"><tspan x="0" y="0">Directions to local urgent care </tspan><tspan x="11.85" y="24">or hospital (Ben</tspan><tspan class="cls-6" x="151.92" y="24"> </tspan><tspan class="cls-4" x="157.12" y="24">T</tspan><tspan x="167.12" y="24">aub, LBJ)</tspan></text>
+    <text class="cls-3" transform="translate(867.63 443.16)"><tspan x="0" y="0">Alarm features: severe eye </tspan><tspan x="19.43" y="24">pain, nausea/vomiting, </tspan><tspan x="10.19" y="48">infection, light sensitivit</tspan><tspan class="cls-1" x="214.73" y="48">y</tspan><tspan x="223.25" y="48">, </tspan><tspan x="37.78" y="72">sudden vision loss</tspan></text>
+    <text class="cls-3" transform="translate(916.82 181.12)"><tspan x="0" y="0">Normal </tspan><tspan class="cls-6" x="70.01" y="0">V</tspan><tspan x="82.99" y="0">ision, minimal </tspan><tspan x="46.49" y="24">disease risk:</tspan><tspan x="43.14" y="48">Reassurance</tspan></text>
+  </g>
+</svg>
