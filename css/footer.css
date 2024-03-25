@@ -13,3 +13,15 @@
 .copyright {
   color: white;
 }
+
+
+
+
+/* Mobile compatibility */
+
+@media (max-width: 1024px) {
+  .footer-object {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}

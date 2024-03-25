@@ -90,3 +90,43 @@
   width: 50%
 }
 
+
+
+/* Mobile Compatibility */
+
+@media (max-width: 1024px) {
+  .clinics-section {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .clinics-text {
+    text-align: left;
+  }
+
+  .maps-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .clinic-list {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+  }
+
+  .clinic-info {
+    padding: 0 5%;
+  }
+
+  .info-list li {
+    text-wrap: wrap;
+    word-wrap: break-word;
+  }
+
+  .clinic-qr-code {
+    width: 40%;
+    margin-bottom: 25px;
+  }
+}
